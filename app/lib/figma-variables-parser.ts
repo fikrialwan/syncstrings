@@ -1,4 +1,4 @@
-type FigmaVariablesExport = {
+export type FigmaVariablesExport = {
   collections: Array<{
     name: string;
     modes: string[];
