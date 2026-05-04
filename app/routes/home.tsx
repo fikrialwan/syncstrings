@@ -95,9 +95,9 @@ export async function action({ request }: Route.ActionArgs) {
 
   if (mode === "api") {
     const pat = formData.get("pat") as string;
-    const nodeLink = formData.get("nodeLink") as string;
+    const link = formData.get("link") as string;
 
-    const urlMatch = nodeLink.match(/figma\.com\/design\/([a-zA-Z0-9]+)/);
+    const urlMatch = link.match(/figma\.com\/design\/([a-zA-Z0-9]+)/);
 
     if (!urlMatch) {
       return { error: "Error: Invalid Figma link. Please ensure it contains a file key." };
@@ -299,15 +299,15 @@ export default function Home() {
 
                 <div>
                   <label
-                    htmlFor="nodeLink"
+                    htmlFor="link"
                     className="block text-sm font-medium text-[#191c1e] mb-2"
                   >
-                    Figma Node Link
+                    Figma Link
                   </label>
                   <input
                     type="text"
-                    id="nodeLink"
-                    name="nodeLink"
+                    id="link"
+                    name="link"
                     placeholder="https://www.figma.com/design/..."
                     className="w-full px-3 py-2 border border-[#E2E8F0] rounded-lg text-sm text-[#191c1e]
                                placeholder:text-[#94A3B8]
