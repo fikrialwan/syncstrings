@@ -213,7 +213,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => setMode("upload")}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${mode === "upload"
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors cursor-pointer ${mode === "upload"
                 ? "text-[#2563EB] border-b-2 border-[#2563EB] bg-[#F8FAFC]"
                 : "text-[#64748b] hover:text-[#191c1e] hover:bg-[#F8FAFC]"
                 }`}
@@ -223,7 +223,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => setMode("api")}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${mode === "api"
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors cursor-pointer ${mode === "api"
                 ? "text-[#2563EB] border-b-2 border-[#2563EB] bg-[#F8FAFC]"
                 : "text-[#64748b] hover:text-[#191c1e] hover:bg-[#F8FAFC]"
                 }`}
@@ -269,7 +269,7 @@ export default function Home() {
                   type="submit"
                   disabled={isProcessing}
                   className="w-full py-2.5 px-4 bg-[#2563EB] text-white text-sm font-medium rounded-lg
-                             hover:bg-[#1D4ED8] transition-colors
+                             hover:bg-[#1D4ED8] transition-colors cursor-pointer
                              disabled:opacity-50 disabled:cursor-not-allowed
                              focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40 focus:ring-offset-2"
                 >
@@ -329,7 +329,7 @@ export default function Home() {
                   type="submit"
                   disabled={isProcessing}
                   className="w-full py-2.5 px-4 bg-[#2563EB] text-white text-sm font-medium rounded-lg
-                             hover:bg-[#1D4ED8] transition-colors
+                             hover:bg-[#1D4ED8] transition-colors cursor-pointer
                              disabled:opacity-50 disabled:cursor-not-allowed
                              focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40 focus:ring-offset-2"
                 >
@@ -371,7 +371,7 @@ export default function Home() {
                           type="button"
                           onClick={() => handleDownloadSingle(index)}
                           className="px-3 py-1.5 text-xs font-medium text-[#2563EB] border border-[#2563EB] rounded
-                                     hover:bg-[#2563EB]/10 transition-colors"
+                                     hover:bg-[#2563EB]/10 transition-colors cursor-pointer"
                         >
                           Download
                         </button>
@@ -384,7 +384,7 @@ export default function Home() {
                     type="button"
                     onClick={handleDownload}
                     className="flex-1 py-2.5 px-4 bg-[#2563EB] text-white text-sm font-medium rounded-lg
-                               hover:bg-[#1D4ED8] transition-colors
+                               hover:bg-[#1D4ED8] transition-colors cursor-pointer
                                focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40 focus:ring-offset-2"
                   >
                     Download All
@@ -393,7 +393,7 @@ export default function Home() {
                     type="button"
                     onClick={handleCancel}
                     className="py-2.5 px-4 border border-[#E2E8F0] text-[#64748b] text-sm font-medium rounded-lg
-                               hover:bg-[#F8FAFC] transition-colors
+                               hover:bg-[#F8FAFC] transition-colors cursor-pointer
                                focus:outline-none focus:ring-2 focus:ring-[#2563EB]/40"
                   >
                     Cancel
